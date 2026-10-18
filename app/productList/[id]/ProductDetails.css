@@ -1,0 +1,139 @@
+
+.details-page {
+  min-height: 100vh;
+  background: #FAFAFA;
+  padding: 35px 5%;
+  color: #202820;
+  font-family: Arial, sans-serif;
+}
+
+.back-btn {
+  background: white;
+  color: #2F5D4A;
+  border: 1px solid #DDE4DC;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+
+.back-btn:hover {
+  background: #2F5D4A;
+  color: white;
+}
+
+.details-card {
+  max-width: 1200px;
+  margin: auto;
+  background: white;
+  border: 1px solid #E8E8E2;
+  border-radius: 22px;
+  box-shadow: 0 8px 30px rgba(30, 50, 35, 0.07);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.details-image-box {
+  background: #F6F3EE;
+  min-height: 450px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.details-image-box img {
+  width: 100%;
+  height: 350px;
+  object-fit: contain;
+}
+
+.details-content {
+  padding: 40px;
+  align-self: center;
+}
+
+.details-label {
+  color: #728275;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.details-content h1 {
+  font-size: 30px;
+  line-height: 1.4;
+  margin: 18px 0;
+}
+
+.details-rating {
+  color: #687C50;
+  font-size: 14px;
+}
+
+.details-rating span {
+  color: #888D85;
+}
+
+.details-price {
+  color: #2F5D4A;
+  font-size: 30px;
+  font-weight: 800;
+  margin: 22px 0;
+}
+
+.details-content h3 {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.details-description {
+  color: #687068;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.details-action {
+  margin-top: 20px;
+  padding: 13px 25px;
+  border: none;
+  border-radius: 30px;
+  background: #2F5D4A;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.details-action:hover {
+  background: #214535;
+}
+
+@media (max-width: 768px) {
+  .details-page {
+    padding: 24px 16px;
+  }
+
+  .details-card {
+    grid-template-columns: 1fr;
+  }
+
+  .details-image-box {
+    min-height: 300px;
+    padding: 25px;
+  }
+
+  .details-image-box img {
+    height: 250px;
+  }
+
+  .details-content {
+    padding: 28px 24px;
+  }
+
+  .details-content h1 {
+    font-size: 25px;
+  }
+}

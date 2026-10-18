@@ -1,0 +1,252 @@
+
+/* Overall Page */
+.home-page {
+  background: #FAFAFA;
+  min-height: 100vh;
+  padding: 28px;
+  color: #202820;
+  font-family: Arial, sans-serif;
+}
+
+/* Hero Carousel */
+.offer-carousel {
+  max-width: 1400px;
+  margin: 0 auto;
+  border: 1px solid #e8e8e2;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(30, 50, 35, 0.08);
+}
+
+.offer-slide {
+  background: #F6F3EE;
+  min-height: 400px;
+}
+
+/* Hero Image */
+.offer-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Hero Content */
+.offer-content {
+  padding: 45px 55px;
+  text-align: left;
+}
+
+.offer-tag {
+  display: inline-block;
+  color: #728275;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #aab6a8;
+  margin-bottom: 22px;
+}
+
+.offer-content h2 {
+  color: #202820;
+  font-size: clamp(30px, 3vw, 46px);
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.offer-content p {
+  color: #425247;
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 22px;
+}
+
+.offer-content h3 {
+  display: table;
+  background: #2F5D4A;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
+/* Shop Button */
+.shop-btn {
+  background: #2F5D4A;
+  color: white;
+  padding: 13px 26px;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+.shop-btn:hover {
+  background: #214535;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Carousel Arrows */
+.offer-carousel .carousel-control-prev,
+.offer-carousel .carousel-control-next {
+  width: 44px;
+  height: 44px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #414741;
+  border-radius: 50%;
+  opacity: 0.95;
+  margin: 0 14px;
+}
+
+.offer-carousel .carousel-control-prev-icon,
+.offer-carousel .carousel-control-next-icon {
+  width: 18px;
+  height: 18px;
+}
+
+/* Carousel Indicators */
+.offer-carousel .carousel-indicators {
+  margin-bottom: 12px;
+}
+
+.offer-carousel .carousel-indicators button {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: none;
+  background-color: #b8beb8;
+  opacity: 1;
+}
+
+.offer-carousel .carousel-indicators button.active {
+  background-color: #2F5D4A;
+}
+
+/* Latest Offers */
+.latest-offers {
+  max-width: 1400px;
+  margin: 42px auto;
+}
+
+.latest-offers > h2 {
+  color: #202820;
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
+/* Horizontal Offer Cards */
+.offer-card {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  min-height: 180px;
+  border: 1px solid #e4e5df;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 12px;
+  gap: 14px;
+  transition: 0.25s ease;
+}
+
+.offer-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 22px rgba(30, 50, 35, 0.08);
+}
+
+/* Card Backgrounds */
+.offer-card.summer {
+  background: #EEF3EC;
+}
+
+.offer-card.special {
+  background: #EEEAF8;
+}
+
+.offer-card.third {
+  background: #F6F0E5;
+}
+
+/* Card Image */
+.offer-card-image {
+  width: 34%;
+  height: 150px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Card Content */
+.offer-card-content {
+  padding: 8px 4px;
+  min-width: 0;
+}
+
+.offer-card-content h4 {
+  color: #202820;
+  font-size: 18px;
+  font-weight: 750;
+  margin-bottom: 8px;
+}
+
+.offer-card-content p {
+  color: #606a60;
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.offer-card-content h5 {
+  display: inline-block;
+  background: #C0392B;
+  color: white;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 7px 12px;
+  border-radius: 7px;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .home-page {
+    padding: 14px;
+  }
+
+  .offer-slide {
+    min-height: auto;
+  }
+
+  .offer-image {
+    height: 240px;
+  }
+
+  .offer-content {
+    padding: 28px 30px;
+  }
+
+  .offer-content h2 {
+    font-size: 30px;
+  }
+
+  .latest-offers {
+    margin-top: 30px;
+  }
+
+  .latest-offers > h2 {
+    font-size: 25px;
+  }
+
+  .offer-card {
+    min-height: 150px;
+  }
+
+  .offer-card-image {
+    height: 125px;
+  }
+}
